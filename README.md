@@ -12,10 +12,25 @@ The dataset used for training the model can be found [here](https://www.kaggle.c
 ```
 git clone https://github.com/younestr/NLP-JobPostings.git
 ```
+For the streamlit app version : 
 
-2. Run the Streamlit app:
+   1. Run the Streamlit app:
 ```
 streamlit run app.py
 ```
-3. Enter a job posting description in the text box and click "Classify" to get the prediction.
+   2. Enter a job posting description in the text box and click "Classify" to get the prediction.
+
+For the react app version : 
+
+   1. Go to the backend directory and start it :
+```
+cd react_backend
+python main.py
+```
+   2. Go to the react application directory and start it :
+```
+cd react-app
+npm start
+```
+   3. Enter a job posting description in the text box and click "Classify" to get the prediction.
 
