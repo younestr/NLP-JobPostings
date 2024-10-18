@@ -2,7 +2,9 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,19 +13,26 @@ body {
   height: 100vh;
 }
 
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .App {
   text-align: center;
   background-color: #ffffff;
   padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  width: 420px;
 }
 
 h1 {
   color: #4A4A4A;
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 textarea {
@@ -32,7 +41,7 @@ textarea {
   padding: 15px;
   font-size: 16px;
   border: 1px solid #D3D3D3;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease;
@@ -41,22 +50,23 @@ textarea {
 textarea:focus {
   border-color: #A6A6A6;
   outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
 }
 
 button {
-  background-color: #6c63ff;
+  background-color: #6a82fb;
+  background-image: linear-gradient(315deg, #6a82fb 0%, #fc5c7d 74%);
   color: white;
   border: none;
   padding: 12px 24px;
-  font-size: 16px;
-  border-radius: 8px;
+  font-size: 18px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #574bff;
+  background-color: #5b6cfb;
   transform: scale(1.05);
 }
 
@@ -69,11 +79,11 @@ h3 {
 footer {
   margin-top: 30px;
   font-size: 14px;
-  color: #777;
+  color: #555;
 }
 
 footer a {
-  color: #6c63ff;
+  color: #6a82fb;
   text-decoration: none;
   font-weight: 500;
 }
